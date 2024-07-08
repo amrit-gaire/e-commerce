@@ -1,5 +1,9 @@
-import Image from "next/image";
+import { CategoriesWrapper } from "@/components/home-page/categories-wrapper";
 
 export default function Home() {
-  return <div>Hello</div>;
+  return (
+    <div className="">
+      <CategoriesWrapper />
+    </div>
+  );
 }
