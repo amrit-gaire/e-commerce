@@ -1,5 +1,6 @@
 export interface Category {
-    id: 1;
-    name: String;
-    imageUrl: String;
+    id: string;
+    name: string;
+    imageUrl: string;
 }
+
