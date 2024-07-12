@@ -11,4 +11,5 @@ export type TProduct = {
     stockQuantity: number;
     image: string[];
     reviews: TReviews[];
+    avgRating: number;
 }

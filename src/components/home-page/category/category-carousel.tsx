@@ -31,15 +31,10 @@ export function CategoryCarousel() {
           {ProductItems.map((items, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center">
-                    <span className="text-4xl font-semibold">
-                      <Image
-                        src={items.image[0]}
-                        alt="item"
-                        width={400}
-                        height={400}
-                      />
+                <Card className="h-[500px]">
+                  <CardContent className="">
+                    <span className="">
+                      <Image src={items.image[0]} alt="item" fill />
                     </span>
                   </CardContent>
                 </Card>

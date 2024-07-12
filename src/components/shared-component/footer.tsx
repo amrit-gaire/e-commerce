@@ -4,7 +4,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="flex justify-between py-10 px-5 bg-green-300">
+    <footer className="flex justify-between py-10 px-5 bg-slate-200">
       <section>
         <h2>Customer Care</h2>
       </section>

@@ -11,7 +11,13 @@ const SingleCategoryItem = ({ category }: Props) => {
   return (
     <Card>
       <CardHeader className="">
-        <Image src={category.imageUrl} alt="" height={100} width={100} />
+        <Image
+          src={category.imageUrl}
+          alt=""
+          className="h-20 w-20 object-cover"
+          height={10}
+          width={10}
+        />
       </CardHeader>
       <CardContent>
         <h3>{category.name}</h3>

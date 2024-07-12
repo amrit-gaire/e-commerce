@@ -5,9 +5,8 @@ type Props = {};
 
 const ProdcutWrapper = (props: Props) => {
   return (
-    <section className="w-full text-center">
-      <h2 className="text-5xl py-5 font-bold ">Our Latest Product</h2>
-
+    <section>
+      <h2 className="text-2xl">Our Latest Product</h2>
       <ProductList />
     </section>
   );
