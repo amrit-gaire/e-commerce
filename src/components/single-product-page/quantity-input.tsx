@@ -13,7 +13,9 @@ const QuantityInput = (props: Props) => {
   const pathname = usePathname();
   const router = useRouter();
 
-  //   console.log(searchParams.get(SELECTED_QUANTITY));
+  const [count, setCount] = useState(
+    parseInt(searchParams.get(SELECTED_QUANTITY) ?? "1")
+  );
 
   //doesn't recreate instead just use cache data
   const createQueryString = useCallback(
@@ -26,28 +28,37 @@ const QuantityInput = (props: Props) => {
     [searchParams]
   );
 
-  const handleQuantityUpdate = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const updateCount = (newCount: number) => {
+    setCount(newCount);
     router.push(
-      pathname + "?" + createQueryString(SELECTED_QUANTITY, event.target.value)
+      pathname + "?" + createQueryString(SELECTED_QUANTITY, newCount.toString())
     );
   };
 
+  const handleQuantityUpdate = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = Math.max(1, parseInt(event.target.value));
+    updateCount(value);
+  };
+
   return (
-    <>
-      <div className="flex">
-        <Button variant={"outline"}>-</Button>
-        <input
-          type="number"
-          min={1}
-          max={5}
-          step={1}
-          className="focus:outline-none px-3 py-2 w-[4ch] text-center"
-          value={searchParams.get(SELECTED_QUANTITY) ?? 1} //null collision operator
-          onChange={handleQuantityUpdate}
-        />
-        <Button variant={"outline"}>+</Button>
-      </div>
-    </>
+    <div className="flex">
+      <Button
+        variant={"outline"}
+        onClick={() => updateCount(Math.max(1, count - 1))}
+      >
+        -
+      </Button>
+      <input
+        type="number"
+        min={1}
+        className="focus:outline-none px-3 py-2 w-[4ch] text-center"
+        value={count}
+        onChange={handleQuantityUpdate}
+      />
+      <Button variant={"outline"} onClick={() => updateCount(count + 1)}>
+        +
+      </Button>
+    </div>
   );
 };
 

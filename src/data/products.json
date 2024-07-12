@@ -26,6 +26,11 @@
                 "message": "The G-Shock watch combines robust durability with modern design, making it an ideal choice for both adventure enthusiasts and everyday wearers."
             },
             {
+                "username": "Alu",
+                "rating": 2,
+                "message": "Bad product overall"
+            },
+            {
                 "username": "Amrit Gaire",
                 "rating": 4.0,
                 "message": "The G-Shock watch is tough, reliable, and perfect for any adventure."
@@ -34,7 +39,7 @@
         "avgRating": 4.7
     },
     {
-        "id": "1",
+        "id": "2",
         "name": "G-Shock watch",
         "description": "G-Shock watches, renowned for their exceptional durability and innovative design.",
         "price": 1200,
@@ -53,22 +58,11 @@
             "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ],
-        "reviews":[ 
-            {
-                "username": "Alember Shreesh",
-                "rating": 4.5,
-                "message": "The G-Shock watch combines robust durability with modern design, making it an ideal choice for both adventure enthusiasts and everyday wearers."
-            },
-            {
-                "username": "Amrit Gaire",
-                "rating": 4.0,
-                "message": "The G-Shock watch is tough, reliable, and perfect for any adventure."
-            }
-        ],
+        "reviews":[],
         "avgRating": 4.7
     },
     {
-        "id": "1",
+        "id": "3",
         "name": "G-Shock watch",
         "description": "G-Shock watches, renowned for their exceptional durability and innovative design.",
         "price": 1200,

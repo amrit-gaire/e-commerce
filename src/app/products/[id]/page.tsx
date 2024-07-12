@@ -3,6 +3,8 @@ import productData from "@/data/products.json";
 import { notFound } from "next/navigation";
 import { TProduct } from "@/types/product";
 import SingleProductHero from "@/components/single-product-page/single-product";
+import SingleProductReviews from "@/components/ratings-and-reviews/single-product-review.tsx";
+import SimilarProduct from "@/components/shared-component/similar-product";
 
 type Props = {
   params: {
@@ -23,6 +25,8 @@ const SingleProductPage = ({ params: { id } }: Props) => {
   return (
     <section>
       <SingleProductHero product={product} />
+      <SingleProductReviews reviews={product} />
+      <SimilarProduct />
     </section>
   );
 };
