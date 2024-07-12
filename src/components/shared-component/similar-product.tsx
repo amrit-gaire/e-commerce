@@ -5,8 +5,7 @@ type Props = {};
 
 const SimilarProduct = (props: Props) => {
   return (
-    <section className="mt-10">
-      <h3>You may also like</h3>
+    <section className="mt-4">
       <ProductList />
     </section>
   );

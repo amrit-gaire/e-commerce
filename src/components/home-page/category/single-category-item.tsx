@@ -9,14 +9,13 @@ type Props = {
 
 const SingleCategoryItem = ({ category }: Props) => {
   return (
-    <Card>
-      <CardHeader className="">
+    <Card className="h-full text-center rounded-sm space-y-4">
+      <CardHeader className="p-0 relative w-full h-[100px]">
         <Image
           src={category.imageUrl}
-          alt=""
-          className="h-20 w-20 object-cover"
-          height={10}
-          width={10}
+          alt={category.name}
+          className="object-cover rounded-t-sm"
+          fill
         />
       </CardHeader>
       <CardContent>

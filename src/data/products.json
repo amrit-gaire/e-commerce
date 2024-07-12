@@ -1,98 +1,126 @@
 [
-    {
-        "id": "1",
-        "name": "G-Shock watch",
-        "description": "G-Shock watches, renowned for their exceptional durability and innovative design.",
-        "price": 1200,
-        "discount": 17,
-        "category": {
-            "id":"1",
-            "name": "G-Shock watch",
-            "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        "stockQuantity": 208,
-        "image": [
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ],
-        "reviews":[ 
-            {
-                "username": "Alember Shreesh",
-                "rating": 4.5,
-                "message": "The G-Shock watch combines robust durability with modern design, making it an ideal choice for both adventure enthusiasts and everyday wearers."
+        {
+            "id": "1",
+            "name": "Adventure Timepiece | Perfect for outdoor enthusiasts, this watch combines rugged durability with a sleek design.",
+            "description": "Perfect for outdoor enthusiasts, this watch combines rugged durability with a sleek design.",
+            "price": 1500,
+            "discount": 10,
+            "category": {
+                "id": "1",
+                "name": "Adventure Timepiece",
+                "imageUrl": "https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
-            {
-                "username": "Alu",
-                "rating": 2,
-                "message": "Bad product overall"
-            },
-            {
-                "username": "Amrit Gaire",
-                "rating": 4.0,
-                "message": "The G-Shock watch is tough, reliable, and perfect for any adventure."
-            }
-        ],
-        "avgRating": 4.7
-    },
-    {
-        "id": "2",
-        "name": "G-Shock watch",
-        "description": "G-Shock watches, renowned for their exceptional durability and innovative design.",
-        "price": 1200,
-        "discount": 17,
-        "category": {
-            "id":"1",
-            "name": "G-Shock watch",
-            "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "stockQuantity": 208,
+            "image": [
+                "https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            ],
+            "reviews": [
+                {
+                    "username": "Alember Shreesh",
+                    "rating": 4.5,
+                    "message": "The Adventure Timepiece combines robust durability with modern design, making it an ideal choice for both adventure enthusiasts and everyday wearers."
+                },
+                {
+                    "username": "Alu",
+                    "rating": 2,
+                    "message": "Bad product overall."
+                },
+                {
+                    "username": "Amrit Gaire",
+                    "rating": 4.0,
+                    "message": "The Adventure Timepiece is tough, reliable, and perfect for any adventure."
+                }
+            ],
+            "avgRating": 4.7
         },
-        "stockQuantity": 208,
-        "image": [
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ],
-        "reviews":[],
-        "avgRating": 4.7
-    },
-    {
-        "id": "3",
-        "name": "G-Shock watch",
-        "description": "G-Shock watches, renowned for their exceptional durability and innovative design.",
-        "price": 1200,
-        "discount": 17,
-        "category": {
-            "id":"1",
-            "name": "G-Shock watch",
-            "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        "stockQuantity": 208,
-        "image": [
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ],
-        "reviews":[ 
-            {
-                "username": "Alember Shreesh",
-                "rating": 4.5,
-                "message": "The G-Shock watch combines robust durability with modern design, making it an ideal choice for both adventure enthusiasts and everyday wearers."
+        {
+            "id": "2",
+            "name": "Stylish Sunglasses",
+            "description": "Protect your eyes with these stylish sunglasses, perfect for sunny days.",
+            "price": 200,
+            "discount": 5,
+            "category": {
+                "id": "2",
+                "name": "Sunglasses",
+                "imageUrl": "https://images.unsplash.com/photo-1610502778270-c5c6f4c7d575?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
-            {
-                "username": "Amrit Gaire",
-                "rating": 4.0,
-                "message": "The G-Shock watch is tough, reliable, and perfect for any adventure."
-            }
-        ],
-        "avgRating": 4.7
-    }
+            "stockQuantity": 150,
+            "image": [
+                "https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            ],
+            "reviews": [
+                {
+                    "username": "Fashionista123",
+                    "rating": 5,
+                    "message": "Love these sunglasses! They are stylish and provide excellent sun protection."
+                },
+                {
+                    "username": "SunnyDays22",
+                    "rating": 4,
+                    "message": "Great value for the price."
+                }
+            ],
+            "avgRating": 4.5
+        },
+        {
+            "id": "3",
+            "name": "Casual Sneakers",
+            "description": "Comfortable and stylish casual sneakers, perfect for everyday wear.",
+            "price": 120,
+            "discount": 0,
+            "category": {
+                "id": "3",
+                "name": "Shoes",
+                "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            "stockQuantity": 300,
+            "image": [
+                "https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            ],
+            "reviews": [
+                {
+                    "username": "SneakerFan99",
+                    "rating": 4.5,
+                    "message": "These sneakers are so comfortable! I wear them all the time."
+                },
+                {
+                    "username": "CasualStyle23",
+                    "rating": 5,
+                    "message": "Great fit and quality."
+                }
+            ],
+            "avgRating": 4.8
+        },
+        {
+            "id": "4",
+            "name": "Casual T-Shirt",
+            "description": "A comfortable and stylish t-shirt for everyday wear.",
+            "price": 30,
+            "discount": 0,
+            "category": {
+                "id": "4",
+                "name": "Clothing",
+                "imageUrl": "https://images.unsplash.com/photo-1590115529027-88d7f20665db?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            "stockQuantity": 500,
+            "image": [
+                "https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1720456990647-bf68a1f94b85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            ],
+            "reviews": [],
+            "avgRating": 0
+        }
+    
+    
 ]

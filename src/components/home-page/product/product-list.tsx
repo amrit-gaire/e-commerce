@@ -1,13 +1,13 @@
 import React from "react";
 import productData from "@/data/products.json";
-import SingleProductCard from "./product-single-card";
 import Link from "next/link";
+import SingleProductCard from "./single-product-card";
 
 type Props = {};
 
 const ProductList = (props: Props) => {
   return (
-    <section className="flex gap-5 w-full justify-center">
+    <section className="grid grid-cols-5 gap-5 w-full mt-4">
       {productData.map((product, ind) => {
         return (
           <Link key={product.id} href={`/products/${product.id}`}>

@@ -1,13 +1,14 @@
 import React from "react";
 import CategoriesList from "./categories-list";
+import Heading from "@/components/shared-component/headings";
 
 type Props = {};
 
 export const CategoriesWrapper = (props: Props) => {
   return (
-    <div>
-      <h2 className="text-2xl">Categories</h2>
+    <section className="mt-12">
+      <Heading text={"Categories"} />
       <CategoriesList />
-    </div>
+    </section>
   );
 };

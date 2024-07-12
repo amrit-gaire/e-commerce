@@ -1,12 +1,13 @@
 import React from "react";
 import ProductList from "./product-list";
+import Heading from "@/components/shared-component/headings";
 
 type Props = {};
 
 const ProdcutWrapper = (props: Props) => {
   return (
-    <section>
-      <h2 className="text-2xl">Our Latest Product</h2>
+    <section className="mt-12">
+      <Heading text="Our Latest Product" />
       <ProductList />
     </section>
   );

@@ -1,22 +1,23 @@
 import React from "react";
 import categoriesData from "@/data/categories.json";
 import SingleCategoryItem from "./single-category-item";
+import { Category } from "@/types/category";
 
 type Props = {};
 
 const CategoriesList = (props: Props) => {
   return (
-    <div>
-      <section className="grid grid-cols-6 gap-5 mt-5">
-        {categoriesData.map((category) => {
+    <>
+      <section className="grid grid-cols-8 gap-5 mt-4">
+        {(categoriesData as Category[]).map((category) => {
           return (
-            <div key={category.id}>
+            <section key={category.id}>
               <SingleCategoryItem category={category} />
-            </div>
+            </section>
           );
         })}
       </section>
-    </div>
+    </>
   );
 };
 

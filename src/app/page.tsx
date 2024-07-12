@@ -5,10 +5,10 @@ import ProdcutWrapper from "@/components/home-page/product/product-wrapper";
 
 export default function Home() {
   return (
-    <div className="">
+    <main>
       <CategoryCarousel />
       <CategoriesWrapper />
       <ProdcutWrapper />
-    </div>
+    </main>
   );
 }

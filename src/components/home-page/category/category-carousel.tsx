@@ -3,8 +3,6 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import ProductItems from "@/data/products.json";
-
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -20,7 +18,7 @@ export function CategoryCarousel() {
   );
 
   return (
-    <div className="flex justify-center">
+    <section className="flex justify-center mt-12">
       <Carousel
         plugins={[plugin.current]}
         className="w-full max-w-2xl"
@@ -30,14 +28,8 @@ export function CategoryCarousel() {
         <CarouselContent>
           {ProductItems.map((items, index) => (
             <CarouselItem key={index}>
-              <div className="p-1">
-                <Card className="h-[500px]">
-                  <CardContent className="">
-                    <span className="">
-                      <Image src={items.image[0]} alt="item" fill />
-                    </span>
-                  </CardContent>
-                </Card>
+              <div className="relative h-[500px]">
+                <Image src={items.image[0]} alt="item" fill />
               </div>
             </CarouselItem>
           ))}
@@ -45,6 +37,6 @@ export function CategoryCarousel() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </div>
+    </section>
   );
 }
