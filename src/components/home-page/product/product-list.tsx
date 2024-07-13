@@ -2,6 +2,7 @@ import React from "react";
 import productData from "@/data/products.json";
 import Link from "next/link";
 import SingleProductCard from "./single-product-card";
+import CustomCard from "@/components/ui/custom/card";
 
 type Props = {};
 
@@ -11,7 +12,8 @@ const ProductList = (props: Props) => {
       {productData.map((product, ind) => {
         return (
           <Link key={product.id} href={`/products/${product.id}`}>
-            <SingleProductCard product={product} key={ind} />
+            {/* <SingleProductCard product={product} key={ind} /> */}
+            <CustomCard variants="blackHole" product={product} />
           </Link>
         );
       })}

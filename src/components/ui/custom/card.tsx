@@ -1,31 +1,83 @@
 import React from "react";
-import { Card, CardContent, CardHeader } from "../card";
+import { Card, CardDescription, CardHeader, CardTitle } from "../card";
 import Image from "next/image";
+import { TProduct } from "@/types/product";
+import { getDiscountedPrice } from "@/utils/getDiscountedPrice";
+import GetDiscountedInfo from "@/components/shared-component/getDiscountInfo";
+import RatingStars from "@/components/shared-component/rating-stars";
 
 type Props = {
   variants: "helloWorld" | "blackHole";
+  product: TProduct;
 };
 
-const CustomCard = ({ variants }: Props) => {
-  {
-    variants === "helloWorld" ? <HelloWorld /> : <BlackHole />;
-  }
+const CustomCard = ({ variants, product }: Props) => {
   return (
-    <Card>
-      <CardHeader>
-        <Image src={""} alt="" className="object-cover rounded-t-md" fill />
-      </CardHeader>
-      <CardContent>Hello</CardContent>
-    </Card>
+    <>
+      {variants === "helloWorld" ? (
+        <HelloWorld product={product} variants={"helloWorld"} />
+      ) : (
+        <BlackHole product={product} variants={"blackHole"} />
+      )}
+    </>
   );
 };
 
 export default CustomCard;
 
-const HelloWorld = () => {
-  return <section>HelloWorld</section>;
+const HelloWorld = ({ product }: Props) => {
+  return (
+    <Card className="h-full hover:shadow-md transition-all">
+      <CardHeader className="relative w-full h-[180px]">
+        <Image
+          src={product.image[0]}
+          alt="image"
+          className="object-cover rounded-t-md"
+          fill
+        />
+      </CardHeader>
+      <div className="px-2">
+        <CardTitle className="text-base line-clamp-2">{product.name}</CardTitle>
+        <RatingStars rating={product.avgRating} />
+        <CardDescription>
+          <span>{product.price}</span>
+          <GetDiscountedInfo
+            price={product.price}
+            discount={product.discount}
+          />
+        </CardDescription>
+      </div>
+    </Card>
+  );
 };
 
-const BlackHole = () => {
-  return <section>BlackHole</section>;
+const BlackHole = ({ product }: Props) => {
+  return (
+    <Card className="h-full group hover:shadow-lg transition-all">
+      <CardHeader className="relative w-full h-[180px]">
+        <Image
+          src={product.image[0]}
+          alt="image"
+          className="object-cover opacity-70"
+          fill
+        />
+      </CardHeader>
+      <div className="flex flex-col justify-between p-2">
+        <CardTitle className="text-lg line-clamp-1">{product.name}</CardTitle>
+        <CardDescription>
+          <div className="flex">
+            <RatingStars rating={product.avgRating} />
+            <span>({product.reviews.length})</span>
+          </div>
+          <div className="text-xl text-black font-bold">
+            Rs.{getDiscountedPrice(product.price, product.discount)}
+          </div>
+          <GetDiscountedInfo
+            price={product.price}
+            discount={product.discount}
+          />
+        </CardDescription>
+      </div>
+    </Card>
+  );
 };

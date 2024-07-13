@@ -11,9 +11,9 @@ const CategoryPage = (props: Props) => {
 
   const category = searchParams.get("category") || "";
   return (
-    <>
+    <section>
       <ProductCategory category={category} />
-    </>
+    </section>
   );
 };
 
