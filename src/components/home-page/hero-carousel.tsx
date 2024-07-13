@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-export function CategoryCarousel() {
+export function HeroCarousel() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
@@ -29,7 +29,12 @@ export function CategoryCarousel() {
           {ProductItems.map((items, index) => (
             <CarouselItem key={index}>
               <div className="relative h-[500px]">
-                <Image src={items.image[0]} alt="item" fill />
+                <Image
+                  src={items.image[0]}
+                  alt="item"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </CarouselItem>
           ))}

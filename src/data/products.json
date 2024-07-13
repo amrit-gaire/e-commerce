@@ -7,7 +7,7 @@
             "discount": 10,
             "category": {
                 "id": "1",
-                "name": "Adventure Timepiece",
+                "name": "clothing",
                 "imageUrl": "https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
             "stockQuantity": 208,
@@ -44,7 +44,7 @@
             "discount": 5,
             "category": {
                 "id": "2",
-                "name": "Sunglasses",
+                "name": "eyeware",
                 "imageUrl": "https://images.unsplash.com/photo-1610502778270-c5c6f4c7d575?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
             "stockQuantity": 150,
@@ -76,7 +76,7 @@
             "discount": 0,
             "category": {
                 "id": "3",
-                "name": "Shoes",
+                "name": "shoes",
                 "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
             "stockQuantity": 300,
@@ -108,7 +108,7 @@
             "discount": 0,
             "category": {
                 "id": "4",
-                "name": "Clothing",
+                "name": "clothing",
                 "imageUrl": "https://images.unsplash.com/photo-1590115529027-88d7f20665db?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
             "stockQuantity": 500,

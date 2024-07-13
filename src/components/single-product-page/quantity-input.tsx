@@ -17,7 +17,6 @@ const QuantityInput = (props: Props) => {
     parseInt(searchParams.get(SELECTED_QUANTITY) ?? "1")
   );
 
-  //doesn't recreate instead just use cache data
   const createQueryString = useCallback(
     (name: string, value: string) => {
       const params = new URLSearchParams(searchParams.toString());

@@ -19,7 +19,7 @@ const SingleCategoryItem = ({ category }: Props) => {
         />
       </CardHeader>
       <CardContent>
-        <h3>{category.name}</h3>
+        <h3 className="capitalize">{category.name}</h3>
       </CardContent>
     </Card>
   );
