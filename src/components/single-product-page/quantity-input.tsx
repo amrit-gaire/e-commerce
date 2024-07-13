@@ -50,6 +50,7 @@ const QuantityInput = (props: Props) => {
       <input
         type="number"
         min={1}
+        max={5}
         className="focus:outline-none px-3 py-2 w-[4ch] text-center"
         value={count}
         onChange={handleQuantityUpdate}

@@ -5,6 +5,7 @@ import RatingStars from "../shared-component/rating-stars";
 import QuantityInput from "./quantity-input";
 import SingleProductDescription from "./product-description";
 import DeliveryDetails from "./delivery-details";
+import GetDiscountedInfo from "../shared-component/getDiscountInfo";
 
 type Props = {
   product: TProduct;
@@ -70,15 +71,10 @@ const SingleProductHero = ({ product }: Props) => {
                   <span className="text-blue-500">No Brand</span>
                 </div>
               </div>
-              <div className="text-xl text-red-600 font-bold">
-                <span>Rs. {discountedPrice} </span>
-                <div>
-                  <span className="text-gray-500 line-through">
-                    Rs. {product.price}{" "}
-                  </span>{" "}
-                  <span className="text-green-600">-{product.discount}%</span>
-                </div>
-              </div>
+              <GetDiscountedInfo
+                price={product.price}
+                discount={product.discount}
+              />
               <div className="text-sm text-gray-500 my-2 flex gap-4">
                 <span>Promotions</span>
                 <span className="bg-[#f97316] text-white px-1">
