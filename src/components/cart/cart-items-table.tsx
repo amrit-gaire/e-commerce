@@ -26,11 +26,11 @@ const CartItemTable = (props: Props) => {
             <TableHead>
               <Checkbox />
             </TableHead>
-            <TableHead className="w-[100px]">Product</TableHead>
+            <TableHead className="w-[300px] text-center">Product</TableHead>
             <TableHead>Price</TableHead>
             <TableHead>Quantity</TableHead>
-            <TableHead className="text-right">Sub Total</TableHead>
-            <TableHead className="text-right">Action</TableHead>
+            <TableHead>Sub Total</TableHead>
+            <TableHead>Action</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -39,27 +39,28 @@ const CartItemTable = (props: Props) => {
               <TableCell>
                 <Checkbox />
               </TableCell>
-              <TableCell className="font-medium">
-                <figure>
-                  <Image
-                    src={cartItem.product.image[0]}
-                    alt={cartItem.product.name}
-                    height={80}
-                    width={80}
-                  />
-                </figure>
+              <TableCell className="flex justify-center">
+                <Image
+                  src={cartItem.product.image[0]}
+                  alt={cartItem.product.name}
+                  height={80}
+                  width={80}
+                />
+                <TableCell>{cartItem.product.name}</TableCell>
               </TableCell>
-              <TableCell>{cartItem.product.description}</TableCell>
-              <TableCell>{cartItem.quantity}</TableCell>
               <TableCell>
                 {getDiscountedPrice(
                   cartItem.product.price,
                   cartItem.product.discount
                 )}
               </TableCell>
-              <TableCell className="text-right flex">
-                <CiHeart size={25} />
-                <MdDeleteOutline size={25} />
+              <TableCell>{cartItem.quantity}</TableCell>
+              <TableCell>{cartItem.totalPrice}</TableCell>
+              <TableCell>
+                <span className="flex">
+                  <CiHeart size={20} />
+                  <MdDeleteOutline size={20} />
+                </span>
               </TableCell>
             </TableRow>
           ))}

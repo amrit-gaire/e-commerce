@@ -24,19 +24,19 @@ function OrderSummary() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Order Summary</CardTitle>
+        <CardTitle className="text-base">Order Summary</CardTitle>
       </CardHeader>
       <CardContent>
-        <section>
-          <h4>Sub Total</h4>
-          <span>Rs. 110</span>
+        <section className="flex justify-between">
+          <h4 className="">Sub Total</h4>
+          <span className="text-sm font-bold">Rs. 110</span>
         </section>
-        <section>
-          <h4>Delivery Fee</h4>
-          <span>Rs. 10</span>
+        <section className="flex justify-between">
+          <h4 className="">Delivery Fee</h4>
+          <span className="text-sm font-bold">Rs. 10</span>
         </section>
         <Separator />
-        <section>
+        <section className="flex justify-between">
           <h4>Total</h4>
           <span>Rs. 120</span>
         </section>
