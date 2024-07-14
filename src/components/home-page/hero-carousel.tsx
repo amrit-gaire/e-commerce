@@ -34,6 +34,7 @@ export function HeroCarousel() {
                   alt="item"
                   fill
                   className="object-cover"
+                  sizes="100vh"
                 />
               </div>
             </CarouselItem>

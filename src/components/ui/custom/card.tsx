@@ -34,6 +34,7 @@ const HelloWorld = ({ product }: Props) => {
           alt="image"
           className="object-cover rounded-t-md"
           fill
+          sizes="180px"
         />
       </CardHeader>
       <div className="px-2">
@@ -60,6 +61,7 @@ const BlackHole = ({ product }: Props) => {
           alt="image"
           className="object-cover opacity-70"
           fill
+          sizes="400px"
         />
       </CardHeader>
       <div className="flex flex-col justify-between p-2">

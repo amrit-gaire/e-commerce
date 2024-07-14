@@ -33,6 +33,7 @@ const SingleProductCard = ({ product }: Props) => {
           alt={product.name}
           className="object-cover rounded-t-sm"
           fill
+          sizes="160px"
         />
       </CardHeader>
       <CardContent>

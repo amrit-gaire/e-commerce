@@ -16,6 +16,7 @@ const SingleCategoryItem = ({ category }: Props) => {
           alt={category.name}
           className="object-cover rounded-t-sm"
           fill
+          sizes="100px"
         />
       </CardHeader>
       <CardContent>
