@@ -67,14 +67,16 @@ const BlackHole = ({ product }: Props) => {
       <div className="flex flex-col justify-between p-2">
         <CardTitle className="text-lg line-clamp-1">{product.name}</CardTitle>
         <CardDescription>
-          <RatingStars rating={product.avgRating} />({product.reviews.length})
-          <span className="text-lg text-black font-bold">
-            Rs.{getDiscountedPrice(product.price, product.discount)}
+          <span className="flex">
+            <RatingStars rating={product.avgRating} />({product.reviews.length})
           </span>
-          <GetDiscountedInfo
-            price={product.price}
-            discount={product.discount}
-          />
+          <span className="text-sm flex flex-col text-black font-bold">
+            Rs.{getDiscountedPrice(product.price, product.discount)}
+            <GetDiscountedInfo
+              price={product.price}
+              discount={product.discount}
+            />
+          </span>
         </CardDescription>
       </div>
     </Card>
