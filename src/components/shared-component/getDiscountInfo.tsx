@@ -8,10 +8,10 @@ type Props = {
 const GetDiscountedInfo = ({ price, discount }: Props) => {
   if (discount === 0) return null;
   return (
-    <div className="flex gap-3">
+    <strong className="space-x-2 font-normal">
       <span className="line-through text-muted-foreground">Rs.{price}</span>
       <span className="text-black">{discount}% off</span>
-    </div>
+    </strong>
   );
 };
 

@@ -13,7 +13,7 @@ const RatingStars = ({ rating }: Props) => {
   const halfStart = TOTAL_STARS_COUNT - fillStar - emptyStar;
 
   return (
-    <div className="flex">
+    <span className="flex">
       {new Array(fillStar).fill("_").map((_, ind) => (
         <FaStar key={ind} className="text-[#f97316]" />
       ))}
@@ -23,7 +23,7 @@ const RatingStars = ({ rating }: Props) => {
       {new Array(emptyStar).fill("_").map((_, ind) => (
         <FaRegStar key={ind} className="text-[#f97316]" />
       ))}
-    </div>
+    </span>
   );
 };
 

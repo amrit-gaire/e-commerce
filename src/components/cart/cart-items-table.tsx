@@ -21,7 +21,6 @@ const CartItemTable = (props: Props) => {
   return (
     <div>
       <Table>
-        {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
         <TableHeader>
           <TableRow>
             <TableHead>
@@ -41,14 +40,14 @@ const CartItemTable = (props: Props) => {
                 <Checkbox />
               </TableCell>
               <TableCell className="font-medium">
-                <div>
+                <figure>
                   <Image
                     src={cartItem.product.image[0]}
                     alt={cartItem.product.name}
                     height={80}
                     width={80}
                   />
-                </div>
+                </figure>
               </TableCell>
               <TableCell>{cartItem.product.description}</TableCell>
               <TableCell>{cartItem.quantity}</TableCell>
