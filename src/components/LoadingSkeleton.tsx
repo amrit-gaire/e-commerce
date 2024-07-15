@@ -4,8 +4,8 @@ type Props = {};
 
 const LoadingSkeleton = (props: Props) => {
   return (
-    <div className="w-screen h-screen flex justify-center">
-      Yamete Kudasaiiiiiiiiiiiiiii............
+    <div className="w-full h-screen flex justify-center items-center font-bold font-mono text-6xl">
+      Oni-chaaa Yamete Kudasaiiiiiiiiiiiiiii............
     </div>
   );
 };

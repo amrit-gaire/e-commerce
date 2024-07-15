@@ -1,3 +1,4 @@
+"use client";
 import { TProduct } from "@/types/product";
 import { getDiscountedPrice } from "@/utils/getDiscountedPrice";
 import Image from "next/image";
@@ -6,15 +7,20 @@ import QuantityInput from "./quantity-input";
 import SingleProductDescription from "./product-description";
 import DeliveryDetails from "./delivery-details";
 import GetDiscountedInfo from "../shared-component/getDiscountInfo";
+import { useEffect, useState } from "react";
 
 type Props = {
   product: TProduct;
 };
 
 const SingleProductHero = ({ product }: Props) => {
+  const [primaryImage, setPrimaryImage] = useState(product.image[0]);
   const discountedPrice = getDiscountedPrice(product.price, product.discount);
+  useEffect(() => {
+    return setPrimaryImage(product.image[0]);
+  }, [product.image]);
 
-  const primaryImage = product.image[0];
+  // const primaryImage = product.image[0];
   return (
     <>
       <section className="flex ">
@@ -43,6 +49,9 @@ const SingleProductHero = ({ product }: Props) => {
                       width={80}
                       height={80}
                       className="rounded-lg"
+                      onMouseOver={() => {
+                        setPrimaryImage(product.image[ind]);
+                      }}
                     />
                   </figure>
                 ))}
