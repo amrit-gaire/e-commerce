@@ -31,11 +31,11 @@ export const Navbar = (props: Props) => {
         <Button variant={"outline"}>Login</Button>
         <span className="flex items-center">|</span>
         <Button variant={"outline"}>SignUp</Button>
-        <Link href={"/customer/cart"}>
-          <Button variant={"outline"}>
+        <Button variant={"outline"} asChild>
+          <Link href={"/customer/cart"}>
             <FaShoppingCart size={20} />
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </section>
     </nav>
   );

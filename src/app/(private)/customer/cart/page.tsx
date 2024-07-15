@@ -1,4 +1,5 @@
 import CartItemTable from "@/components/cart/cart-items-table";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import React from "react";
@@ -41,6 +42,9 @@ function OrderSummary() {
           <span>Rs. 120</span>
         </section>
       </CardContent>
+      <section className="w-full flex justify-center pb-4">
+        <Button>Proceed to Checkout</Button>
+      </section>
     </Card>
   );
 }
