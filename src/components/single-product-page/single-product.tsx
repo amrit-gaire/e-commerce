@@ -80,10 +80,13 @@ const SingleProductHero = ({ product }: Props) => {
                   <span className="text-blue-500">No Brand</span>
                 </div>
               </div>
-              <GetDiscountedInfo
-                price={product.price}
-                discount={product.discount}
-              />
+              <section className="space-x-2">
+                <span>{product.price}</span>
+                <GetDiscountedInfo
+                  price={product.price}
+                  discount={product.discount}
+                />
+              </section>
               <div className="text-sm text-gray-500 my-2 flex gap-4">
                 <span>Promotions</span>
                 <span className="bg-[#f97316] text-white px-1">
