@@ -35,5 +35,9 @@ export const authOptions:NextAuthOptions = {
                 return foundUser
               }
         })
-    ]
+    ],
+    pages: {
+        signIn: '/auth/signin',
+        signOut: '/auth/signout',
+      }
 }
