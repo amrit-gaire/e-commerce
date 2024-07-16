@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
 import { FaShoppingCart } from "react-icons/fa";
+import CustomInput from "../ui/custom/input";
 
 type Props = {};
 
@@ -14,7 +15,7 @@ export const Navbar = (props: Props) => {
         <Link href={"/"}>AHEGAO</Link>
       </figure>
       <section>
-        <input className="w-[400px] h-8 focus:outline-none border-2 border-black rounded-md px-2" />
+        <CustomInput />
       </section>
       <ul className="flex gap-10">
         <li>
@@ -28,9 +29,13 @@ export const Navbar = (props: Props) => {
         </li>
       </ul>
       <section className="flex gap-2">
-        <Button variant={"outline"}>Login</Button>
+        <Button variant={"outline"} asChild>
+          <Link href={"/login"}>Login</Link>
+        </Button>
         <span className="flex items-center">|</span>
-        <Button variant={"outline"}>SignUp</Button>
+        <Button variant={"outline"} asChild>
+          <Link href={"/signup"}>SignUp</Link>
+        </Button>
         <Button variant={"outline"} asChild>
           <Link href={"/customer/cart"}>
             <FaShoppingCart size={20} />
