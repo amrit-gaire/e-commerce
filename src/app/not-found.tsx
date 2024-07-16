@@ -17,8 +17,8 @@ export default function NotFound() {
           Oops! Senpai, Page Not Found~
         </h2>
         <p className="text-lg text-white mb-8">
-          It seems you&apos;ve wandered off the path. <br /> There's nothing
-          here, b-baka!
+          It seems you&apos;ve wandered off the path. <br /> There&apos;s
+          nothing here, b-baka!
         </p>
         <Button
           className="text-base font-medium text-pink-600 hover:text-black hover:bg-pink-300"
