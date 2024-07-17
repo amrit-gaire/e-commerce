@@ -21,7 +21,7 @@ export const authOptions:NextAuthOptions = {
                 const user = [{
                     id: "1",
                     email: "alember@gmail.com",
-                    password: "12345678"
+                    password: "alember"
                 }]
 
                 const foundUser = user.find(user => user.email === credentials?.email)

@@ -14,8 +14,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 
-// import { signIn } from "next-auth/react";
-
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import {
@@ -24,9 +22,7 @@ import {
 } from "@/modals/sign-in.modal";
 import { signUpFormField, TsignUpFormSchema } from "@/modals/sign-up.modal";
 
-type Props = {
-  callbackUrl: string;
-};
+type Props = {};
 
 const SignupPage = (props: Props) => {
   const form = useForm<TsignUpFormSchema>({
@@ -39,7 +35,7 @@ const SignupPage = (props: Props) => {
   }
 
   return (
-    <main className="mt-10 h-screen">
+    <main className="mt-10 h-scree items-center">
       <section className=" bg-gray-100 text-black outline-none rounded-md w-10/12 mx-auto  grid grid-cols-2 gap-10  ">
         <Image
           src={
@@ -49,7 +45,7 @@ const SignupPage = (props: Props) => {
           width={0}
           height={0}
           sizes={"100vw"}
-          className="w-full h-full object-cover  rounded-md"
+          className="w-full h-full object-cover rounded-md"
         />
         <div className="p-4">
           <Form {...form}>

@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: ecommerce-development-postgres
+    ports:
+      - 5932:5932
+    env_file:
+      - .env.local
+    volumes:
+      - postgres:/data/postgres
+
+volumes:
+  postgres:

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: "Shopping platform for you baby.",
 };
 
-const ProductsLayout = (props: Props) => {
-  return <div>ProductsLayout</div>;
+const ProductsLayout = ({ children }: Props) => {
+  return <div>{children}</div>;
 };
 
 export default ProductsLayout;

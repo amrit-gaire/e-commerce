@@ -20,10 +20,12 @@ import {
 } from "@/modals/sign-in.modal";
 import { Card } from "@/components/ui/card";
 import { signIn } from "next-auth/react";
+import { useToast } from "@/components/ui/use-toast";
 
 type Props = {};
 
 const SignIn = (props: Props) => {
+  const { toast } = useToast();
   // 1. Define your form.
   const form = useForm<TSignInFormSchema>({
     resolver: zodResolver(signInFormSchema),
@@ -32,15 +34,22 @@ const SignIn = (props: Props) => {
 
   // 2. Define a submit handler.
   async function onSubmit(values: TSignInFormSchema) {
-    await signIn("credentials", {
-      email: values.email,
-      password: values.password,
-
-      redirect: true,
-      callbackUrl: "http://localhost:3000/customer/cart",
-    });
-    console.log(values);
+    try {
+      await signIn("credentials", {
+        email: values.email,
+        password: values.password,
+        redirect: true,
+        callbackUrl: "http://localhost:3000/",
+      });
+    } catch (error) {
+      toast({
+        title: "Failed to login",
+        description: "Wrong credentias boy!",
+        variant: "destructive",
+      });
+    }
   }
+
   return (
     <section className="h-screen flex justify-center items-center">
       <Card className="p-10 w-[500px] h-[400px] bg-blue-300">
