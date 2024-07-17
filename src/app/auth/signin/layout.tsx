@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  title: "Sign In | Ahegao",
+  title: "Sign Up | Ahegao",
   description: "Shopping platform for you baby.",
 };
 

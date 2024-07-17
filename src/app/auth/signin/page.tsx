@@ -19,6 +19,7 @@ import {
   TSignInFormSchema,
 } from "@/modals/sign-in.modal";
 import { Card } from "@/components/ui/card";
+import { signIn } from "next-auth/react";
 
 type Props = {};
 
@@ -30,7 +31,14 @@ const SignIn = (props: Props) => {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: TSignInFormSchema) {
+  async function onSubmit(values: TSignInFormSchema) {
+    await signIn("credentials", {
+      email: values.email,
+      password: values.password,
+
+      redirect: true,
+      callbackUrl: "http://localhost:3000/customer/cart",
+    });
     console.log(values);
   }
   return (
@@ -56,7 +64,6 @@ const SignIn = (props: Props) => {
                         {...field}
                       />
                     </FormControl>
-                    {/* <FormDescription>{formField.description}</FormDescription> */}
                     <FormMessage />
                   </FormItem>
                 )}

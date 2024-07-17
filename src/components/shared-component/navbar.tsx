@@ -1,8 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
 import { FaShoppingCart } from "react-icons/fa";
 import CustomInput from "../ui/custom/input";
+import SignIn from "@/app/auth/signin/page";
+import { signIn, signOut } from "next-auth/react";
 
 type Props = {};
 
@@ -30,11 +34,19 @@ export const Navbar = (props: Props) => {
       </ul>
       <section className="flex gap-2">
         <Button variant={"outline"} asChild>
-          <Link href={"/login"}>Login</Link>
+          <Link href={"/auth/signup"}>Sign Up</Link>
         </Button>
         <span className="flex items-center">|</span>
         <Button variant={"outline"} asChild>
-          <Link href={"/auth/signin"}>SignUp</Link>
+          <Link href={"/auth/signin"}>Sign In</Link>
+        </Button>
+        <span className="flex items-center">|</span>
+        <Button
+          variant={"outline"}
+          className="bg-transparent"
+          onClick={() => signOut()}
+        >
+          signout
         </Button>
         <Button variant={"outline"} asChild>
           <Link href={"/customer/cart"}>
